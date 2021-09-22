@@ -4,6 +4,14 @@ class something {
     return "This is something ";
     }
     public static void main(String[] args){
-        System.out.println(method());
+        IntMethod();
+    }
+    static void IntMethod(){
+        int a=0,b=0;
+        for(a=0;a<10;a++)
+        {
+            System.out.println(method()+"  "+b);
+            b++;
+        }
     }
 }
