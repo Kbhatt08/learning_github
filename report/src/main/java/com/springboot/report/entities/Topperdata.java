@@ -1,5 +1,6 @@
 package com.springboot.report.entities;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -10,16 +11,21 @@ import javax.persistence.StoredProcedureParameter;
 import javax.persistence.Table;
 
 @Entity
-@Table
+@Table(name = "topper")
 @NamedStoredProcedureQuery(name = "calltopper", procedureName = "USP_byclass", parameters = {
         @StoredProcedureParameter(mode = ParameterMode.IN, name = "id", type = int.class) })
 public class Topperdata {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "studentid")
     private int studentid;
+    @Column
     private String Student;
+    @Column
     private int Classid;
+    @Column
     private String Class;
+    @Column
     private int Totalmarks;
 
     public Topperdata(int studentid, String student, int classid, String classname, int totalmarks) {
