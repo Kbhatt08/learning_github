@@ -1,5 +1,6 @@
 package com.springboot.report.entities;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -20,24 +21,22 @@ public class subtopper {
     private int studentid;
     private String Student;
     private int Classid;
+    @Column(name = "class")
     private String Class;
-    private int Totalmarks;
+    private String subjectName;
+    private int marksAchieved;
 
-    public subtopper(int studentid, String student, int classid, String classname, int totalmarks) {
+    public subtopper(int studentid, String student, int classid, String classname, String subjectName,
+            int marksAchieved) {
         this.studentid = studentid;
         Student = student;
         Classid = classid;
         Class = classname;
-        Totalmarks = totalmarks;
+        this.subjectName = subjectName;
+        this.marksAchieved = marksAchieved;
     }
 
     public subtopper() {
-    }
-
-    @Override
-    public String toString() {
-        return "subtopper [Class=" + Class + ", Classid=" + Classid + ", Student=" + Student + ", Totalmarks="
-                + Totalmarks + ", studentid=" + studentid + "]";
     }
 
     public int getStudentid() {
@@ -64,7 +63,7 @@ public class subtopper {
         Classid = classid;
     }
 
-    public String getClassname() {
+    public String getClass1() {
         return Class;
     }
 
@@ -72,12 +71,26 @@ public class subtopper {
         Class = classname;
     }
 
-    public int getTotalmarks() {
-        return Totalmarks;
+    public String getSubjectName() {
+        return subjectName;
     }
 
-    public void setTotalmarks(int totalmarks) {
-        Totalmarks = totalmarks;
+    public void setSubjectName(String subjectName) {
+        this.subjectName = subjectName;
+    }
+
+    public int getMarksAchieved() {
+        return marksAchieved;
+    }
+
+    public void setMarksAchieved(int marksAchieved) {
+        this.marksAchieved = marksAchieved;
+    }
+
+    @Override
+    public String toString() {
+        return "subtopper [Class=" + Class + ", Classid=" + Classid + ", Student=" + Student + ", marksAchieved="
+                + marksAchieved + ", studentid=" + studentid + ", subjectName=" + subjectName + "]";
     }
 
 }
