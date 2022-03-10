@@ -72,7 +72,7 @@ class ReportApplicationTests {
 
 	// Testing Subtopper Service
 	@Test
-	void subtopper() {
+	void testsubtopper() {
 		// Expected
 		subtopper testVariable = new subtopper(33, "Ankita", 11, "Junior Secondary", "Social Science", 97);
 		// actual result where classId=11 and subjectId=5
