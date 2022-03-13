@@ -1,5 +1,8 @@
 package com.springboot.report.services;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -83,31 +86,31 @@ public class dataServiceImpl implements dataService {
         List<subtop> list = new ArrayList<>();
         student.forEach(e -> {
             if (e.getClass1() == grade) {
-                int marks;
-                if (subject == "english") {
+                int marks = 89;
+                subtop topper;
+                if (subject.equals("english")) {
                     marks = e.getEnglishmarks();
-                    subtop topper = new subtop(e.getStudentid(), e.getStudentName(), e.getClass1(), "english", marks);
+                    topper = new subtop(e.getStudentid(), e.getStudentName(), e.getClass1(), "english", marks);
                     list.add(topper);
                 }
-                if (subject == "hindi") {
+                if (subject.equals("hindi")) {
                     marks = e.getHindimarks();
-                    subtop topper = new subtop(e.getStudentid(), e.getStudentName(), e.getClass1(), "hindi", marks);
+                    topper = new subtop(e.getStudentid(), e.getStudentName(), e.getClass1(), "hindi", marks);
                     list.add(topper);
                 }
-                if (subject == "maths") {
+                if (subject.equals("maths")) {
                     marks = e.getMathmarks();
-                    subtop topper = new subtop(e.getStudentid(), e.getStudentName(), e.getClass1(), "maths", marks);
+                    topper = new subtop(e.getStudentid(), e.getStudentName(), e.getClass1(), "maths", marks);
                     list.add(topper);
                 }
-                if (subject == "science") {
+                if (subject.equals("science")) {
                     marks = e.getSciencemarks();
-                    subtop topper = new subtop(e.getStudentid(), e.getStudentName(), e.getClass1(), "science", marks);
+                    topper = new subtop(e.getStudentid(), e.getStudentName(), e.getClass1(), "science", marks);
                     list.add(topper);
                 }
-                if (subject == "socialscience") {
+                if (subject.equals("socialscience")) {
                     marks = e.getSocialscmarks();
-                    subtop topper = new subtop(e.getStudentid(), e.getStudentName(), e.getClass1(), "socialscience",
-                            marks);
+                    topper = new subtop(e.getStudentid(), e.getStudentName(), e.getClass1(), "socialscience", marks);
                     list.add(topper);
                 }
             }
@@ -116,8 +119,8 @@ public class dataServiceImpl implements dataService {
     }
 
     @Override
-    public List<subtop> getsubtop(int grade, String subject) {
-        List<subtop> list = findbysub(grade, subject, ddao.findAll());
+    public List<subtop> getsubtop(int classid, String subject) {
+        List<subtop> list = findbysub(classid, subject, ddao.findAll());
         int max = 0;
         for (subtop T : list) {
             if (T.getMarksAchieved() > max) {

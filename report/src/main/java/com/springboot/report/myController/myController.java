@@ -68,6 +68,7 @@ public class myController {
 
     @GetMapping("/studentsubtopper")
     public List<subtop> getsubtop(@RequestParam int classid, @RequestParam String subject) {
+
         return this.ds.getsubtop(classid, subject);
     }
 }
