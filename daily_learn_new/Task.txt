@@ -1,0 +1,17 @@
+Have skills in JAVA, DevOps, Web-Devlopment.
+
+- JAVA
+- LINUX
+- JENKINS - similar tools also
+- Kubernates
+- springboot
+- spring framework
+- micro profile
+- Git
+
+TASK
+
+- Play with JVM 
+Tweak properties of JVM
+Run a code there.
+

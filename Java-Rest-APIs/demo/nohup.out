@@ -1,0 +1,55 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.1)
+
+2024-01-13T15:44:30.390+05:30  INFO 386641 --- [           main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.9 with PID 386641 (/home/admin1/projects/Java-Rest-APIs/demo/target/demo-0.0.1-SNAPSHOT.jar started by admin1 in /home/admin1/projects/Java-Rest-APIs/demo)
+2024-01-13T15:44:30.395+05:30  INFO 386641 --- [           main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-01-13T15:44:31.549+05:30  INFO 386641 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-01-13T15:44:31.582+05:30  INFO 386641 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-13T15:44:31.582+05:30  INFO 386641 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-13T15:44:31.674+05:30  INFO 386641 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-13T15:44:31.678+05:30  INFO 386641 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1173 ms
+2024-01-13T15:44:32.234+05:30  WARN 386641 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-01-13T15:44:32.255+05:30  INFO 386641 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-01-13T15:44:32.278+05:30 ERROR 386641 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.1)
+
+2024-01-13T15:45:35.712+05:30  INFO 387041 --- [           main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.9 with PID 387041 (/home/admin1/projects/Java-Rest-APIs/demo/target/demo-0.0.1-SNAPSHOT.jar started by admin1 in /home/admin1/projects/Java-Rest-APIs/demo)
+2024-01-13T15:45:35.724+05:30  INFO 387041 --- [           main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-01-13T15:45:37.132+05:30  INFO 387041 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-01-13T15:45:37.158+05:30  INFO 387041 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-13T15:45:37.159+05:30  INFO 387041 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-13T15:45:37.255+05:30  INFO 387041 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-13T15:45:37.260+05:30  INFO 387041 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1418 ms
+2024-01-13T15:45:37.767+05:30  INFO 387041 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2024-01-13T15:45:37.806+05:30  INFO 387041 --- [           main] com.example.demo.DemoApplication         : Started DemoApplication in 2.562 seconds (process running for 3.096)
+2024-01-13T15:45:43.238+05:30  INFO 387041 --- [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-13T15:45:43.238+05:30  INFO 387041 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-13T15:45:43.239+05:30  INFO 387041 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms

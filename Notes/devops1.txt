@@ -1,0 +1,5 @@
+grep -E 'vmx|svm' /proc/cpuinfo
+
+sudo virt-install --name test-vm --memory 4048 --disk size=90 --cdrom Downloads/ubuntu-20.04.6-desktop-amd64.iso --os-variant ubuntu20.04
+
+

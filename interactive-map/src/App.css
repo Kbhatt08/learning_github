@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.map-container {
+  width: 100%;
+  height: 600px; /* Ensure the height is large enough */
+  display: flex;
+  justify-content: center;
+  overflow: hidden; /* Prevents the map from overflowing outside the container */
+}
+
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  color: white; /* White text */
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  pointer-events: none; /* Prevent tooltip from interfering with mouse events */
+  transition: opacity 0.3s; /* Smooth fade-in/fade-out effect */
+}
+
+p {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}

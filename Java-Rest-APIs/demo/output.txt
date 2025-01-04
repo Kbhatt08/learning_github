@@ -1,0 +1,18 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.1)
+
+2024-01-13T15:49:27.079+05:30  INFO 388530 --- [           main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.9 with PID 388530 (/home/admin1/projects/Java-Rest-APIs/demo/target/demo-0.0.1-SNAPSHOT.jar started by admin1 in /home/admin1/projects/Java-Rest-APIs/demo)
+2024-01-13T15:49:27.089+05:30  INFO 388530 --- [           main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-01-13T15:49:29.140+05:30  INFO 388530 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-01-13T15:49:29.152+05:30  INFO 388530 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-13T15:49:29.152+05:30  INFO 388530 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-13T15:49:29.191+05:30  INFO 388530 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-13T15:49:29.193+05:30  INFO 388530 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1902 ms
+2024-01-13T15:49:29.881+05:30  INFO 388530 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2024-01-13T15:49:29.927+05:30  INFO 388530 --- [           main] com.example.demo.DemoApplication         : Started DemoApplication in 3.419 seconds (process running for 4.033)
